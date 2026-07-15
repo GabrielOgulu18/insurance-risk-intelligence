@@ -20,6 +20,27 @@ losses.
 The system should support claims managers, financial analysts, risk
 analysts, and senior management.
 
+## Dataset-Driven Scope Update
+
+The selected public dataset is primarily policy-level insurance data.
+
+The core predictive work will therefore focus on:
+
+- claim occurrence;
+- claim frequency;
+- claim severity;
+- pure premium or expected loss;
+- high-loss policy classification.
+
+The dataset does not contain fraud labels, claim-processing information,
+premiums, budgets, or transaction dates.
+
+Fraud detection and claim-level operational analysis are not part of
+the real-data modelling scope.
+
+Any synthetic financial or time-series extension created for dashboard
+and forecasting purposes will be clearly labelled and documented.
+
 ## Project Objective
 
 The objective is to develop an insurance claims analytics system that

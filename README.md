@@ -53,6 +53,20 @@ The main objectives are to:
 - Microsoft Excel
 - Git and GitHub
 
+## Completed
+
+- Selected the freMTPL2 motor-insurance dataset.
+- Created a reproducible OpenML download script.
+- Documented the dataset variables and limitations.
+- Defined the policy-level modelling targets.
+
+## Upcoming
+
+- Conduct an initial data inspection.
+- Validate data types and identifiers.
+- Analyze missing, duplicate, and invalid values.
+- Join the frequency and severity tables.
+
 ## Repository Structure
 
 ```text
@@ -68,3 +82,4 @@ insurance-risk-intelligence/
 ├── reports/
 ├── src/
 └── tests/
+
