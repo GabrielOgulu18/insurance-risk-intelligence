@@ -1,0 +1,49 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and credentials
+.env
+*.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# VS Code user settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Python testing files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model files
+*.pkl
+*.joblib
+
+# Raw data
+data/raw/*
+!data/raw/.gitkeep
+
+# Interim data
+data/interim/*
+!data/interim/.gitkeep
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep
