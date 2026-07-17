@@ -1,0 +1,18 @@
+Measure,Value
+Raw frequency rows,678013
+Raw severity rows,26639
+Valid frequency rows,678013
+Invalid core frequency rows,0
+Valid severity rows,26639
+Invalid severity rows,0
+Cleaned frequency missing values,0
+Cleaned severity missing values,0
+Cross-table mismatched policy IDs,9123
+Severity IDs without frequency record,6
+Frequency policies with count mismatch,9117
+Final policy analytics rows,678013
+Frequency-model eligible policies,678013
+Severity-model eligible policies,24943
+Pure-premium-model eligible policies,668896
+Claims reported by ClaimNb,36102
+Valid severity claim rows,26639

@@ -64,14 +64,20 @@ The main objectives are to:
 - Validated policy identifiers and categorical values.
 - Compared policy claim counts with claim-level severity records.
 - Generated a reproducible data-quality summary.
+- Standardized the policy and claim datasets.
+- Created structural validity flags.
+- Aggregated individual claim amounts to the policy level.
+- Classified cross-table claim-count inconsistencies.
+- Created model-specific eligibility indicators.
+- Built the first policy-level analytical dataset.
 
 ## Upcoming
 
-- Resolve or document cross-table inconsistencies.
-- Create cleaned interim datasets.
-- Aggregate claim amounts to the policy level.
-- Create derived insurance variables.
-- Build the first combined analytical dataset.
+- Explore policy, vehicle, driver, and geographic distributions.
+- Examine claim occurrence and claim frequency.
+- Analyze the claim-severity distribution.
+- Compare claim outcomes across customer-risk segments.
+- Define the high-loss policy threshold.
 
 ## Repository Structure
 

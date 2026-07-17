@@ -1,0 +1,6 @@
+AuditStatus,PolicyCount,Percentage
+no_claim_no_severity,643953,94.97565702436067
+matched_positive_claims,24943,3.6788054612038894
+claim_without_severity,9116,1.3445050949899635
+severity_without_frequency,6,0.0008849309532623717
+fewer_severity_rows_than_claimnb,1,0.00014748849221039528

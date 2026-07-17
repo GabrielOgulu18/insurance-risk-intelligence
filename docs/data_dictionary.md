@@ -46,6 +46,47 @@ These variables will be created during data preparation.
 | ClaimRateBand | Risk category based on observed claim frequency |
 | HighLossPolicy | Policy exceeding a documented loss threshold |
 
+## Policy-Level Analytical Dataset
+
+File: `data/processed/policy_analytics.csv`
+
+Each row represents one valid automobile insurance policy.
+
+| Variable | Description |
+|---|---|
+| HasClaim | 1 when `ClaimNb` is greater than zero |
+| HasSeverityRecord | 1 when at least one severity row exists |
+| SeverityRowCount | Number of severity-table rows for the policy |
+| SeverityTotalClaimAmount | Sum of observed severity claim amounts |
+| SeverityAverageClaimAmount | Average amount among observed severity rows |
+| SeverityMinimumClaimAmount | Smallest observed claim amount |
+| SeverityMaximumClaimAmount | Largest observed claim amount |
+| ClaimCountDifference | `ClaimNb` minus `SeverityRowCount` |
+| ClaimCountMatch | Whether both claim counts agree |
+| SeverityCompletenessStatus | Description of cross-table completeness |
+| AnnualizedClaimFrequency | `ClaimNb` divided by `Exposure` |
+| ObservedAverageClaimAmount | Observed claim total divided by severity rows |
+| CompleteTotalClaimAmount | Total loss when claim counts agree; otherwise missing |
+| CompleteAverageClaimAmount | Average loss for matched positive-claim policies |
+| CompletePurePremium | Complete claim cost divided by exposure |
+| FrequencyModelEligible | Whether the policy can be used for frequency modelling |
+| SeverityModelEligible | Whether the policy can be used for severity modelling |
+| PurePremiumModelEligible | Whether the policy has a complete pure-premium outcome |
+
+## Severity Completeness Status
+
+| Status | Meaning |
+|---|---|
+| no_claim_no_severity | Both tables indicate zero claims |
+| matched_positive_claims | Positive claim count agrees across both tables |
+| claim_without_severity | `ClaimNb` is positive but no severity row exists |
+| fewer_severity_rows_than_claimnb | Severity table contains fewer rows than `ClaimNb` |
+| more_severity_rows_than_claimnb | Severity table contains more rows than `ClaimNb` |
+| severity_without_frequency | Severity policy ID is absent from frequency data |
+
+`severity_without_frequency` appears in the audit dataset but not in the
+final policy-level dataset.
+
 ## Notes
 
 - `IDpol` is an identifier and will not be used as a predictive feature.
