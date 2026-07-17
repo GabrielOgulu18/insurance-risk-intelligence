@@ -53,6 +53,26 @@ The main objectives are to:
 - Microsoft Excel
 - Git and GitHub
 
+## Exploratory Analysis
+
+The exploratory analysis examines claim occurrence, claim frequency,
+claim severity, pure premium, and differences across policy segments.
+
+### Claim Occurrence
+
+![Policy claim occurrence](reports/figures/eda/claim_occurrence.png)
+
+### Claim Frequency by Area
+
+![Claim frequency by area](reports/figures/eda/claim_frequency_by_area.png)
+
+### Pure Premium by Driver Age Band
+
+![Pure premium by driver age band](reports/figures/eda/pure_premium_by_driver_age_band.png)
+
+The charts show unadjusted historical relationships. They should not be
+interpreted as causal effects.
+
 ## Completed
 
 - Selected the freMTPL2 motor-insurance dataset.
@@ -70,14 +90,18 @@ The main objectives are to:
 - Classified cross-table claim-count inconsistencies.
 - Created model-specific eligibility indicators.
 - Built the first policy-level analytical dataset.
+- Completed exploratory analysis of the insurance portfolio.
+- Calculated portfolio-level claim frequency, severity, and pure premium.
+- Compared claim outcomes across driver, vehicle, and geographic groups.
+- Examined the highly skewed claim-amount distribution.
+- Created reusable summary tables and GitHub-ready figures.
 
 ## Upcoming
 
-- Explore policy, vehicle, driver, and geographic distributions.
-- Examine claim occurrence and claim frequency.
-- Analyze the claim-severity distribution.
-- Compare claim outcomes across customer-risk segments.
-- Define the high-loss policy threshold.
+- Build the relational SQLite database.
+- Write reusable SQL queries for insurance KPIs.
+- Validate SQL results against the Python analysis.
+- Prepare baseline claim-occurrence and frequency models.
 
 ## Repository Structure
 

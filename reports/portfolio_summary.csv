@@ -1,0 +1,12 @@
+Metric,Value,Definition
+Total policies,678013.0,Number of policies
+Total exposure years,358499.4454629838,Combined observed coverage period
+Total reported claims,36102.0,Sum of ClaimNb
+Policies with at least one claim,34060.0,Policies where ClaimNb is greater than zero
+Claim occurrence rate,0.05023502499214617,Policies with claims divided by all policies
+Claim frequency,0.10070308464041305,Claims divided by exposure
+Claims per 100 exposure-years,10.070308464041306,Claim frequency multiplied by 100
+Complete loss policies,668896.0,Policies with complete frequency and severity outcomes
+Complete claim cost,59908673.169999994,Claim cost among complete policies
+Average claim severity,2265.5777774836442,Complete positive claim cost divided by complete claims
+Pure premium,169.2846276272367,Complete claim cost divided by complete exposure
