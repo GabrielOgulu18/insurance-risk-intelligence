@@ -59,13 +59,19 @@ The main objectives are to:
 - Created a reproducible OpenML download script.
 - Documented the dataset variables and limitations.
 - Defined the policy-level modelling targets.
+- Completed the initial data-quality inspection.
+- Examined data types, missing values, duplicates, and numerical ranges.
+- Validated policy identifiers and categorical values.
+- Compared policy claim counts with claim-level severity records.
+- Generated a reproducible data-quality summary.
 
 ## Upcoming
 
-- Conduct an initial data inspection.
-- Validate data types and identifiers.
-- Analyze missing, duplicate, and invalid values.
-- Join the frequency and severity tables.
+- Resolve or document cross-table inconsistencies.
+- Create cleaned interim datasets.
+- Aggregate claim amounts to the policy level.
+- Create derived insurance variables.
+- Build the first combined analytical dataset.
 
 ## Repository Structure
 
