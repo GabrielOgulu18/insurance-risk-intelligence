@@ -1,0 +1,4 @@
+AuditStatus,policy_count,total_count_difference
+claim_without_severity,9116,9657
+severity_without_frequency,6,-195
+fewer_severity_rows_than_claimnb,1,1

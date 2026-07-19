@@ -47,3 +47,11 @@ data/interim/*
 # Processed data
 data/processed/*
 !data/processed/.gitkeep
+
+# SQLite databases
+database/*.sqlite
+database/*.sqlite3
+database/*.db
+database/*-journal
+database/*-wal
+database/*-shm

@@ -95,13 +95,20 @@ interpreted as causal effects.
 - Compared claim outcomes across driver, vehicle, and geographic groups.
 - Examined the highly skewed claim-amount distribution.
 - Created reusable summary tables and GitHub-ready figures.
+- Built a relational SQLite insurance database.
+- Connected policy records to valid claim records.
+- Preserved unmatched claims in a separate audit table.
+- Created SQL views for portfolio KPIs and segment analysis.
+- Validated SQL results against the Python calculations.
+- Exported reusable SQL reports for future Power BI development.
 
 ## Upcoming
 
-- Build the relational SQLite database.
-- Write reusable SQL queries for insurance KPIs.
-- Validate SQL results against the Python analysis.
-- Prepare baseline claim-occurrence and frequency models.
+- Prepare modelling features and train/test samples.
+- Build a claim-occurrence baseline model.
+- Evaluate class imbalance and probability calibration.
+- Build a Poisson claim-frequency model.
+- Compare statistical and machine-learning approaches.
 
 ## Repository Structure
 

@@ -1,0 +1,5 @@
+completeness_status,policy_count,percentage
+no_claim_no_severity,643953,94.97649750078538
+matched_positive_claims,24943,3.678838016380217
+claim_without_severity,9116,1.3445169930370067
+fewer_severity_rows_than_claimnb,1,0.00014748979739326532
