@@ -73,6 +73,31 @@ claim severity, pure premium, and differences across policy segments.
 The charts show unadjusted historical relationships. They should not be
 interpreted as causal effects.
 
+## Claim-Occurrence Model
+
+A logistic-regression model estimates whether a policy will report at
+least one claim during its observed exposure period.
+
+The model uses driver, vehicle, geographic, and exposure
+characteristics. Claim and severity outcomes are excluded from the
+predictors to prevent data leakage.
+
+### ROC Curve
+
+![Claim occurrence ROC curve](reports/figures/modeling/claim_occurrence/claim_occurrence_roc_curve.png)
+
+### Precision-Recall Curve
+
+![Claim occurrence precision-recall curve](reports/figures/modeling/claim_occurrence/claim_occurrence_precision_recall_curve.png)
+
+### Confusion Matrix
+
+![Claim occurrence confusion matrix](reports/figures/modeling/claim_occurrence/claim_occurrence_confusion_matrix.png)
+
+The classification threshold was selected using the validation sample
+and an F2 objective that gives greater importance to identifying claim
+policies.
+
 ## Completed
 
 - Selected the freMTPL2 motor-insurance dataset.
@@ -101,14 +126,21 @@ interpreted as causal effects.
 - Created SQL views for portfolio KPIs and segment analysis.
 - Validated SQL results against the Python calculations.
 - Exported reusable SQL reports for future Power BI development.
+- Created stratified training, validation, and test samples.
+- Built a leakage-safe modelling pipeline.
+- Established a no-claim baseline.
+- Trained the first claim-occurrence logistic-regression model.
+- Selected a classification threshold using validation F2-score.
+- Evaluated discrimination, classification, and calibration.
+- Documented the strongest model coefficients and limitations.
 
 ## Upcoming
 
-- Prepare modelling features and train/test samples.
-- Build a claim-occurrence baseline model.
-- Evaluate class imbalance and probability calibration.
-- Build a Poisson claim-frequency model.
-- Compare statistical and machine-learning approaches.
+- Investigate model performance across policy subgroups.
+- Compare logistic regression with a tree-based classifier.
+- Build an exposure-adjusted Poisson claim-frequency model.
+- Compare observed and predicted claim frequencies.
+- Develop a claim-severity model.
 
 ## Repository Structure
 
