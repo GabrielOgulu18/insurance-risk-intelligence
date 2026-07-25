@@ -59,7 +59,7 @@ sample.
 
 The selected threshold was:
 
-`0.050973`
+`0.050975`
 
 It maximized the F2-score, which gives recall greater importance than
 precision.
@@ -80,44 +80,44 @@ At the validation-selected threshold:
 
 - Precision: 0.071
 - Recall: 0.624
-- Specificity: 0.570
+- Specificity: 0.571
 - F1-score: 0.128
 - F2-score: 0.245
 - ROC-AUC: 0.640
 - PR-AUC: 0.091
 - Brier score: 0.04701
-- False positives: 55,317
-- False negatives: 2,559
+- False positives: 55,310
+- False negatives: 2,558
 
 ## Strongest Positive Coefficients
 
 | Feature | Coefficient | Odds ratio |
 |---|---:|---:|
-| numeric__LogExposure | 0.4380 | 1.5496 |
+| numeric__LogExposure | 0.4380 | 1.5497 |
 | numeric__BonusMalus | 0.3193 | 1.3762 |
-| categorical__Region_R74 | 0.2732 | 1.3141 |
-| categorical__Region_R53 | 0.2639 | 1.3020 |
-| categorical__Region_R24 | 0.1979 | 1.2188 |
-| categorical__Region_R82 | 0.1859 | 1.2042 |
-| categorical__Region_R21 | 0.1588 | 1.1721 |
-| categorical__Region_R22 | 0.1578 | 1.1710 |
+| categorical__Region_R74 | 0.2739 | 1.3151 |
+| categorical__Region_R53 | 0.2646 | 1.3030 |
+| categorical__Region_R24 | 0.1987 | 1.2198 |
+| categorical__Region_R82 | 0.1866 | 1.2051 |
+| categorical__Region_R21 | 0.1595 | 1.1729 |
+| categorical__Region_R22 | 0.1584 | 1.1716 |
 | numeric__DrivAge | 0.1418 | 1.1523 |
-| categorical__Region_R25 | 0.1365 | 1.1463 |
+| categorical__Region_R25 | 0.1372 | 1.1471 |
 
 ## Strongest Negative Coefficients
 
 | Feature | Coefficient | Odds ratio |
 |---|---:|---:|
-| categorical__Region_R23 | -0.3325 | 0.7171 |
-| categorical__Region_R83 | -0.2539 | 0.7757 |
+| categorical__Region_R23 | -0.3319 | 0.7176 |
+| categorical__Region_R83 | -0.2533 | 0.7762 |
 | numeric__VehAge | -0.2145 | 0.8069 |
-| categorical__Region_R73 | -0.1734 | 0.8408 |
-| categorical__Region_R91 | -0.1380 | 0.8711 |
-| categorical__Region_R72 | -0.1087 | 0.8970 |
-| categorical__Region_R43 | -0.1048 | 0.9005 |
-| categorical__Region_R31 | -0.0878 | 0.9160 |
-| categorical__Region_R41 | -0.0637 | 0.9383 |
-| categorical__VehBrand_B6 | -0.0582 | 0.9434 |
+| categorical__Region_R73 | -0.1728 | 0.8413 |
+| categorical__Region_R91 | -0.1373 | 0.8717 |
+| categorical__Region_R72 | -0.1080 | 0.8976 |
+| categorical__Region_R43 | -0.1042 | 0.9011 |
+| categorical__Region_R31 | -0.0872 | 0.9165 |
+| categorical__Region_R41 | -0.0630 | 0.9389 |
+| categorical__VehBrand_B6 | -0.0580 | 0.9436 |
 
 Positive coefficients are associated with higher estimated claim odds,
 while negative coefficients are associated with lower estimated claim

@@ -350,7 +350,7 @@ def build_model_pipeline() -> Pipeline:
         solver="saga",
         penalty="l2",
         C=1.0,
-        max_iter=500,
+        max_iter=2000,
         tol=1e-3,
         random_state=RANDOM_STATE,
     )
