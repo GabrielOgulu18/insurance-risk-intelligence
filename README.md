@@ -98,6 +98,35 @@ The classification threshold was selected using the validation sample
 and an F2 objective that gives greater importance to identifying claim
 policies.
 
+## Claim-Occurrence Model Comparison
+
+The baseline logistic-regression model was compared with histogram
+gradient boosting using identical training, validation, and test
+samples.
+
+The preferred model was selected using validation PR-AUC. Each model's
+classification threshold was selected using validation F2-score.
+
+### ROC Comparison
+
+![ROC comparison](reports/figures/modeling/claim_occurrence_comparison/roc_curve_comparison.png)
+
+### Precision-Recall Comparison
+
+![Precision-recall comparison](reports/figures/modeling/claim_occurrence_comparison/precision_recall_comparison.png)
+
+### Review-Capacity Analysis
+
+![Capacity analysis](reports/figures/modeling/claim_occurrence_comparison/capacity_capture_comparison.png)
+
+### Permutation Feature Importance
+
+![Permutation importance](reports/figures/modeling/claim_occurrence_comparison/permutation_importance.png)
+
+The capacity analysis measures how many claim policies are captured
+when only a fixed percentage of the highest-scored portfolio can be
+reviewed.
+
 ## Completed
 
 - Selected the freMTPL2 motor-insurance dataset.
@@ -133,14 +162,20 @@ policies.
 - Selected a classification threshold using validation F2-score.
 - Evaluated discrimination, classification, and calibration.
 - Documented the strongest model coefficients and limitations.
+- Compared logistic regression with histogram gradient boosting.
+- Selected the preferred model using validation PR-AUC.
+- Compared classification results using validation-selected thresholds.
+- Evaluated claim capture at fixed review-capacity levels.
+- Calculated test-sample permutation feature importance.
+- Audited model performance by area, fuel type, and driver-age band.
 
 ## Upcoming
 
-- Investigate model performance across policy subgroups.
-- Compare logistic regression with a tree-based classifier.
 - Build an exposure-adjusted Poisson claim-frequency model.
 - Compare observed and predicted claim frequencies.
-- Develop a claim-severity model.
+- Evaluate frequency-model deviance and calibration.
+- Build a claim-severity model using complete positive claims.
+- Combine frequency and severity predictions into expected loss cost.
 
 ## Repository Structure
 
