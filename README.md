@@ -127,6 +127,33 @@ The capacity analysis measures how many claim policies are captured
 when only a fixed percentage of the highest-scored portfolio can be
 reviewed.
 
+## Claim-Frequency Models
+
+The project models the number of claims per exposure-year using:
+
+- a constant portfolio-frequency baseline;
+- regularized Poisson regression;
+- histogram gradient boosting with Poisson loss.
+
+Policy exposure is incorporated through a scaled-Poisson formulation:
+the target is claim count divided by exposure, and exposure is used as
+the model weight.
+
+### Poisson-Deviance Comparison
+
+![Frequency-model deviance comparison](reports/figures/modeling/claim_frequency/test_poisson_deviance_comparison.png)
+
+### Risk-Decile Calibration
+
+![Frequency calibration by risk decile](reports/figures/modeling/claim_frequency/frequency_calibration_deciles.png)
+
+### Observed and Predicted Frequency
+
+![Observed and predicted frequency](reports/figures/modeling/claim_frequency/observed_predicted_frequency_by_decile.png)
+
+The preferred frequency model was selected using validation
+exposure-weighted Poisson deviance.
+
 ## Completed
 
 - Selected the freMTPL2 motor-insurance dataset.
@@ -168,14 +195,23 @@ reviewed.
 - Evaluated claim capture at fixed review-capacity levels.
 - Calculated test-sample permutation feature importance.
 - Audited model performance by area, fuel type, and driver-age band.
+- Created claim-frequency training, validation, and test samples.
+- Incorporated policy exposure into the modelling objective.
+- Established a constant-frequency benchmark.
+- Trained regularized Poisson regression.
+- Trained nonlinear gradient boosting using Poisson loss.
+- Selected the preferred model using validation Poisson deviance.
+- Evaluated total-claim calibration and risk-decile calibration.
+- Compared observed and predicted frequencies across portfolio segments.
+
 
 ## Upcoming
 
-- Build an exposure-adjusted Poisson claim-frequency model.
-- Compare observed and predicted claim frequencies.
-- Evaluate frequency-model deviance and calibration.
-- Build a claim-severity model using complete positive claims.
+- Build a positive-claim severity modelling sample.
+- Compare Gamma regression with nonlinear severity models.
+- Evaluate severity using Gamma deviance and financial error metrics.
 - Combine frequency and severity predictions into expected loss cost.
+- Compare the two-part model with direct Tweedie pure-premium modelling.
 
 ## Repository Structure
 

@@ -1,0 +1,2 @@
+Model,Sample,ExposureWeightedPoissonDeviance,CountMeanPoissonDeviance,D2Poisson,WeightedFrequencyMAE,CountMAE,CountRMSE,ObservedClaims,PredictedClaims,PredictedToObservedClaimsRatio,ObservedFrequency,PredictedFrequency,FrequencyDifference,PearsonDispersionDiagnostic
+Histogram gradient boosting,Test,0.566759934146104,0.29924025065637083,0.0892240750103428,0.1816642602940983,0.09591584639378632,0.23415824182568154,7209.0,7224.462906902272,1.002144944777677,0.10068965646412463,0.10090563021692342,0.00021597375279878983,2.0091906962773467
