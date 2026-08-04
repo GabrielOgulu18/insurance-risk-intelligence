@@ -1,0 +1,2 @@
+Model,Sample,WeightedGammaDeviance,D2Gamma,WeightedMAE,WeightedRMSE,WeightedBias,Policies,Claims,ObservedClaimAmount,PredictedClaimAmount,PredictedToObservedAmountRatio,ObservedMeanSeverity,PredictedMeanSeverity,MeanSeverityDifference
+Constant severity baseline,Test,1.6476958598416376,-0.0008489873874093501,2172.0182371662727,14083.72033672643,83.73807594700871,4989,5279,11530829.879999999,11972883.18292426,1.0383366425074914,2184.282985413904,2268.021061360913,83.73807594700884

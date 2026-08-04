@@ -154,6 +154,35 @@ the model weight.
 The preferred frequency model was selected using validation
 exposure-weighted Poisson deviance.
 
+## Claim-Severity Models
+
+The project estimates average claim amount conditional on a policy
+having complete positive claim information.
+
+The models include:
+
+- a constant weighted-mean severity baseline;
+- regularized Gamma regression;
+- histogram gradient boosting with Gamma loss.
+
+Policies are weighted by their number of claims because the analytical
+dataset contains one average-severity row per policy.
+
+### Gamma-Deviance Comparison
+
+![Severity-model deviance comparison](reports/figures/modeling/claim_severity/test_gamma_deviance_comparison.png)
+
+### Severity Calibration
+
+![Severity calibration](reports/figures/modeling/claim_severity/severity_calibration_deciles.png)
+
+### Observed and Predicted Severity
+
+![Observed and predicted severity](reports/figures/modeling/claim_severity/observed_predicted_severity_by_decile.png)
+
+Large losses were retained and reviewed through tail summaries and a
+largest-error audit report.
+
 ## Completed
 
 - Selected the freMTPL2 motor-insurance dataset.
@@ -203,15 +232,23 @@ exposure-weighted Poisson deviance.
 - Selected the preferred model using validation Poisson deviance.
 - Evaluated total-claim calibration and risk-decile calibration.
 - Compared observed and predicted frequencies across portfolio segments.
+- Created a complete positive-claim severity sample.
+- Weighted policy averages by the number of represented claims.
+- Established a constant-severity benchmark.
+- Trained regularized Gamma regression.
+- Trained nonlinear gradient boosting using Gamma loss.
+- Selected the preferred model using validation Gamma deviance.
+- Evaluated financial calibration and risk-decile calibration.
+- Audited extreme losses and the largest prediction errors.
 
 
 ## Upcoming
 
-- Build a positive-claim severity modelling sample.
-- Compare Gamma regression with nonlinear severity models.
-- Evaluate severity using Gamma deviance and financial error metrics.
-- Combine frequency and severity predictions into expected loss cost.
-- Compare the two-part model with direct Tweedie pure-premium modelling.
+- Combine predicted claim frequency and severity.
+- Estimate expected claim cost per exposure-year.
+- Build a direct Tweedie pure-premium model.
+- Compare two-part and direct loss-cost predictions.
+- Export modelling results for Power BI.
 
 ## Repository Structure
 

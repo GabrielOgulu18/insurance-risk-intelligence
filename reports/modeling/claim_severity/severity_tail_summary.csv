@@ -1,0 +1,14 @@
+Metric,Value
+Policy average severity: Minimum,1.49
+Policy average severity: 25th percentile,716.93
+Policy average severity: Median,1172.0
+Policy average severity: 75th percentile,1218.28
+Policy average severity: 90th percentile,2735.645999999999
+Policy average severity: 95th percentile,4356.260999999995
+Policy average severity: 99th percentile,17479.75559999994
+Policy average severity: 99.5th percentile,37744.280000000814
+Policy average severity: 99.9th percentile,186642.8710399986
+Policy average severity: Maximum,774411.5
+Top 1% policy share of claim amount,0.36355544688688096
+Top 5% policy share of claim amount,0.5085829650623551
+Top 10% policy share of claim amount,0.5866411741736667
